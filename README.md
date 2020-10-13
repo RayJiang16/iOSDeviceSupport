@@ -10,13 +10,13 @@ iOS DeviceSupport files (13.0-14.0)
 Download shell script.
 
 ```sh
-curl -L -O https://github.com/RayJiang16/iOSDeviceSupport/raw/main/download.sh
+$ curl -L -O https://github.com/RayJiang16/iOSDeviceSupport/raw/main/download.sh
 ```
 
 Run "download.sh"
 
 ```shell
-sudo sh download.sh 14.0
+$ sudo sh download.sh 14.0
 ```
 
 
@@ -29,7 +29,7 @@ Unzip it.
 
 Put unzipped folder in into path:
 
-```shell
+```
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport
 ```
 
