@@ -1,40 +1,28 @@
 #!/bin/bash
 
 VERSION=$1
-VERSION_LIST=("13.0" "13.1" "13.2" "13.3" "13.4" "13.5" "13.6" "13.7" "14.0")
 
-printVersion() {
-    i=0
-    count=${#VERSION_LIST[*]}
-    while (( i < count )); do
-        left=${VERSION_LIST[i]}
-        ((i++))
-        if (( i < count )); then
-            right=${VERSION_LIST[i]}
-            ((i++))
-            echo "$left\t$right"
-        else
-            echo "$left"
-        fi
-    done
+check() {
+    prefix=${VERSION%%.*}
+    curl --head "https://github.com/RayJiang16/iOSDeviceSupport/raw/main/DeviceSupport/iOS$prefix/$VERSION.zip" | head -n 3 | grep "HTTP/1.[01] 404"
 }
 
 if [ ${#VERSION} == 0 ]; then
-    printVersion
     read -p "Enter version you want to download:" VERSION
 fi
 
 cd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport
 
-if [[ ! " ${VERSION_LIST[@]} " =~ " ${VERSION} " ]]; then
-    echo "\033[31mVersion $VERSION dosen't exists\033[0m"
-    exit 0
-fi
-
 if [ -d $VERSION ]; then
     echo "\033[32mVersion $VERSION already exists\033[0m"
     exit 0
 fi
+
+if check; then
+    echo "\033[31mVersion $VERSION dosen't exists\033[0m"
+    exit 0
+fi
+
 
 prefix=${VERSION%%.*}
 download_url="https://github.com/RayJiang16/iOSDeviceSupport/raw/main/DeviceSupport/iOS$prefix/$VERSION.zip"
