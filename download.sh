@@ -20,7 +20,7 @@ fi
 
 if check; then
     echo "\033[31mVersion $VERSION dosen't exists\033[0m"
-    exit 0
+    exit 1
 fi
 
 
@@ -30,7 +30,7 @@ curl -L -O $download_url
 
 if [ ! -f "$VERSION.zip" ]; then
     echo "\033[31mFailed download Version $VERSION\033[0m"
-    exit 0
+    exit 2
 fi
 
 unzip "$VERSION.zip"
