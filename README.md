@@ -39,6 +39,8 @@ Restart Xcode.
 
 | Version | Remark |
 | ----- | ----  |
+| [iOS 15.0 beta3](https://github.com/RayJiang16/iOSDeviceSupport/raw/main/DeviceSupport/beta/15.0-beta3.zip) | Form Xcode 13.0 beta 3 |
+| [iOS 15.0 beta2](https://github.com/RayJiang16/iOSDeviceSupport/raw/main/DeviceSupport/beta/15.0-beta2.zip) | Form Xcode 13.0 beta 2 |
 | [iOS 15.0 beta1](https://github.com/RayJiang16/iOSDeviceSupport/raw/main/DeviceSupport/beta/15.0-beta1.zip) | Form Xcode 13.0 beta 1 |
 | [iOS 14.5](https://github.com/RayJiang16/iOSDeviceSupport/raw/main/DeviceSupport/iOS14/14.5.zip) | Form Xcode 12.5 Release |
 | [iOS 14.4](https://github.com/RayJiang16/iOSDeviceSupport/raw/main/DeviceSupport/iOS14/14.4.zip) | Form Xcode 12.4 Release |
