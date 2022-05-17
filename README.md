@@ -1,6 +1,6 @@
 # iOSDeviceSupport
 
-iOS DeviceSupport files (14.0-15.0)
+iOS DeviceSupport files (14.0-15.5)
 
 
 ## Usage
@@ -16,7 +16,7 @@ $ curl -L -O https://github.com/RayJiang16/iOSDeviceSupport/raw/main/download.sh
 Run "download.sh"
 
 ```shell
-$ sudo sh download.sh 15.0
+$ sudo sh download.sh 15.5
 ```
 
 
@@ -39,6 +39,7 @@ Restart Xcode.
 
 | Version | Remark |
 | ----- | ----  |
+| [iOS 15.5](https://github.com/RayJiang16/iOSDeviceSupport/raw/main/DeviceSupport/iOS15/15.5.zip) | Form Xcode 13.4 Release Candidate 1 |
 | [iOS 15.4](https://github.com/RayJiang16/iOSDeviceSupport/raw/main/DeviceSupport/iOS15/15.4.zip) | Form Xcode 13.3 Release Candidate 1 |
 | [iOS 15.2](https://github.com/RayJiang16/iOSDeviceSupport/raw/main/DeviceSupport/iOS15/15.2.zip) | Form Xcode 13.2 Release |
 | [iOS 15.0](https://github.com/RayJiang16/iOSDeviceSupport/raw/main/DeviceSupport/iOS15/15.0.zip) | Form Xcode 13.0 Release Candidate 1 |
